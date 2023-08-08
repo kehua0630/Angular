@@ -1,0 +1,12 @@
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" [(ngModel)]="lockCtrl"
+    (ngModelChange)="lockChange()">
+  <label class="form-check-label" for="flexSwitchCheckDefault">{{ !lockCtrl?'開啟':'關閉'}}鎖滑鼠右鍵</label>
+</div>
+
+<hr>
+複製用：
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="copyText"></textarea>
+<span [appCopyClipboard]="copyText" (copied)="copyLog($event)">
+  <button type="button" class="btn btn-secondary">複製</button>
+</span>

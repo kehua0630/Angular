@@ -15,6 +15,10 @@ export class AppComponent {
       name: SIDEBAR_ENUM.GET_IP_ADDRESS,
       router: SIDEBAR_ROUTING.GET_IP_ADDRESS
     },
+    {
+      name: SIDEBAR_ENUM.COPY_AND_LOCK,
+      router: SIDEBAR_ROUTING.COPY_AND_LOCK
+    }
   ]
 
   constructor(
