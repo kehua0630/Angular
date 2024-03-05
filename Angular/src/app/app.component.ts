@@ -18,6 +18,14 @@ export class AppComponent {
     {
       name: SIDEBAR_ENUM.COPY_AND_LOCK,
       router: SIDEBAR_ROUTING.COPY_AND_LOCK
+    },
+    // {
+    //   name: SIDEBAR_ENUM.PDF_VIEWER,
+    //   router: SIDEBAR_ROUTING.PDF_VIEWER
+    // },
+    {
+      name: SIDEBAR_ENUM.MOVING_DIV,
+      router: SIDEBAR_ROUTING.MOVING_DIV
     }
   ]
 

@@ -1,0 +1,11 @@
+<div class="online-chat-card" #chatModal>
+  <div class="base-card">
+    <div class="resize-r" (mousedown)="mouseDown($event, 'resize-r')" (mouseup)="mouseUp()"></div>
+    <div class="resize-b" (mousedown)="mouseDown($event, 'resize-b')" (mouseup)="mouseUp()"></div>
+    <div class="base-card-header chat-header" #chatHeader (mousedown)="mouseDown($event, 'move')" (mouseup)="mouseUp()">
+
+    </div>
+    <div class="base-card-content area-container">
+    </div>
+  </div>
+</div>

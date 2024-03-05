@@ -1,0 +1,7 @@
+<div class="ng2pdfReader" (mousedown)="startDragging($event, false, pdfViewer)" (mouseup)="stopDragging($event, false)"
+  (mouseleave)="stopDragging($event, false)" (mousemove)="moveEvent($event, pdfViewer)" #pdfViewer>
+  <pdf-viewer [src]="'https://ncu.rcnpv.com.tw/Uploads/20131231103232738561744.pdf'" (after-load-complete)="afterLoadComplete($event)" [render-text]="false"
+    [original-size]="originalSize" [zoom-scale]="'page-height'" [show-all]="false" [(page)]="pageValue" [zoom]="zoom"
+    [rotation]="rotateDeg" >
+  </pdf-viewer>
+</div>
